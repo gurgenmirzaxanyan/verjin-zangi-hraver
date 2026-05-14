@@ -1,0 +1,68 @@
+/* style.css */
+/* User: Apply this CSS to your HTML if you want to run it dynamically. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --gold: #c5a059;
+    --dark-blue: #1a2530;
+    --soft-white: #fdfbfb;
+    --text-gray: #5a5a5a;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef1f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.invitation-card {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 60px 40px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    margin-bottom: 30px;
+}
+
+.details-bell {
+    background: #fafafa;
+    padding: 60px 40px 40px 40px;
+    border-radius: 50% 50% 15% 15% / 80% 80% 10% 10%;
+    margin-bottom: 40px;
+    position: relative;
+    border: 1px solid #f0f0f0;
+}
+
+.details-bell::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 15px;
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+.details-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.bottom-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
